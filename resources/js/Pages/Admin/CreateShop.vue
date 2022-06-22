@@ -140,7 +140,7 @@ export default {
   layout: AdminNavigation,
   methods: {
     submit() {
-      Inertia.post(`/admin/shop/create`, this.form, {
+      Inertia.post(`/admin/shop/store`, this.form, {
         forceFormData: true,
         preserveScroll: true,
         preserveState: true,

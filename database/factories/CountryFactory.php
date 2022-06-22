@@ -30,7 +30,7 @@ class CountryFactory extends Factory
             'country' => $this->faker->country(),
             'currency' => $this->faker->currencyCode(),
             'status' => $this->faker->boolean(),
-            'country_code' => $this->faker->countryCode(),
+            'country_code' => rand(111, 353),
         ];
     }
 }

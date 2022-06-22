@@ -49,8 +49,8 @@ class ProductController extends Controller
     }
     public function store(Request $request)
     {
-        $hasShop = User::find($request->user()->id)->shop->exists();
-        if ($hasShop) {
+        $hasShop = User::find($request->user()->id)->shop;
+        if (!$hasShop) {
             return back()->withErrors(['shop' => 'Please register a seller first.']);
         }
 

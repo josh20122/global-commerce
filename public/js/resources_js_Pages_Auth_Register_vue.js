@@ -461,7 +461,7 @@ var render = function () {
                                                   dense: "",
                                                   "error-messages":
                                                     _vm.errors.phone_number,
-                                                  prefix: _vm.countryCode,
+                                                  prefix: "+" + _vm.countryCode,
                                                   "prepend-inner-icon":
                                                     "mdi-phone",
                                                   hint: "please enter a valid Phone Number",

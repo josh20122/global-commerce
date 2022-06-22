@@ -11,13 +11,13 @@
         </v-list-item>
         <v-divider class=""></v-divider>
         <v-list-item v-for="page in links" :key="page.links">
-          <Link :href="page.link">
+          <Link :href="page.link" preserve-state preserve-scroll>
             <v-list-item-icon class="">
               <v-icon color="grey lighten-4" v-text="page.icon"></v-icon>
             </v-list-item-icon>
           </Link>
           <v-list-item-content class="">
-            <Link :href="page.link">
+            <Link :href="page.link" preserve-state preserve-scroll>
               <v-list-item-title
                 class="text-white capitalize"
                 v-text="page.page"
@@ -46,12 +46,12 @@
 
           <v-list-item v-for="page in group.pages" :key="page.name">
             <v-list-item-icon>
-              <Link :href="page.link">
+              <Link :href="page.link" preserve-state preserve-scroll>
                 <v-icon color="white" v-text="page.icon"> </v-icon>
               </Link>
             </v-list-item-icon>
             <v-list-item-content>
-              <Link :href="page.link">
+              <Link :href="page.link" preserve-state preserve-scroll>
                 <v-list-item-title
                   class="white--text"
                   v-text="page.name"
@@ -80,7 +80,7 @@
           </v-col>
         </v-row>
       </v-container>
-      <Link href="/auth/logout" v-if="info.auth">
+      <Link href="/auth/logout" v-if="info.auth" preserve-state preserve-scroll>
         <v-btn icon color="white">
           <v-icon color="white"> mdi-logout </v-icon>
         </v-btn>

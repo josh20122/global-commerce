@@ -80,3 +80,7 @@ Route::controller(AccountController::class)->group(function () {
 });
 
 Route::put('/set-country', [SetCountryController::class, 'setCountry']);
+
+Route::get('/account', function () {
+    return Inertia::render('Views/Review');
+});

@@ -68,7 +68,7 @@
                           dense
                           v-model="form.phone_number"
                           :error-messages="errors.phone_number"
-                          :prefix="countryCode"
+                          :prefix="'+' + countryCode"
                           prepend-inner-icon="mdi-phone"
                           hint="please enter a valid Phone Number"
                           :rules="required"

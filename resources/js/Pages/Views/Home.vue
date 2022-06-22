@@ -4,10 +4,10 @@
       <v-col cols="3" class="d-none d-sm-flex">
         <SideNav :category="categories" />
       </v-col>
-      <v-col cols="12" sm="9" class="" v-if="gdgdg">
+      <v-col cols="12" sm="9" class="">
         <Carousel />
       </v-col>
-      <v-col cols="12" class="">
+      <v-col cols="12" class="" v-if="$vuetify.breakpoint.mdAndUp">
         <Products />
       </v-col>
       <v-col cols="12" class="">

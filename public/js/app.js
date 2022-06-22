@@ -723,6 +723,16 @@ var map = {
 		"/js/vendor",
 		"resources_js_Pages_Views_Order_vue"
 	],
+	"./Views/Review": [
+		"./resources/js/Pages/Views/Review.vue",
+		"/js/vendor",
+		"resources_js_Pages_Views_Review_vue"
+	],
+	"./Views/Review.vue": [
+		"./resources/js/Pages/Views/Review.vue",
+		"/js/vendor",
+		"resources_js_Pages_Views_Review_vue"
+	],
 	"./Views/Search": [
 		"./resources/js/Pages/Views/Search.vue",
 		"/js/vendor",

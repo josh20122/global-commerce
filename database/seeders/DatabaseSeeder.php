@@ -53,6 +53,10 @@ class DatabaseSeeder extends Seeder
                         ->count(1))
                     ->count(3)
             )
+            ->has(User::factory()
+                ->has(Image::factory()
+                    ->count(1))
+                ->count(5))
             ->create();
 
         $user1 =  User::create([

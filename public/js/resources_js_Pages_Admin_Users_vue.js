@@ -866,7 +866,13 @@ var render = function () {
                   [
                     _c(
                       "Link",
-                      { attrs: { href: page.link } },
+                      {
+                        attrs: {
+                          href: page.link,
+                          "preserve-state": "",
+                          "preserve-scroll": "",
+                        },
+                      },
                       [
                         _c(
                           "v-list-item-icon",
@@ -889,7 +895,13 @@ var render = function () {
                       [
                         _c(
                           "Link",
-                          { attrs: { href: page.link } },
+                          {
+                            attrs: {
+                              href: page.link,
+                              "preserve-state": "",
+                              "preserve-scroll": "",
+                            },
+                          },
                           [
                             _c("v-list-item-title", {
                               staticClass: "text-white capitalize",
@@ -963,7 +975,13 @@ var render = function () {
                             [
                               _c(
                                 "Link",
-                                { attrs: { href: page.link } },
+                                {
+                                  attrs: {
+                                    href: page.link,
+                                    "preserve-state": "",
+                                    "preserve-scroll": "",
+                                  },
+                                },
                                 [
                                   _c("v-icon", {
                                     attrs: { color: "white" },
@@ -983,7 +1001,13 @@ var render = function () {
                             [
                               _c(
                                 "Link",
-                                { attrs: { href: page.link } },
+                                {
+                                  attrs: {
+                                    href: page.link,
+                                    "preserve-state": "",
+                                    "preserve-scroll": "",
+                                  },
+                                },
                                 [
                                   _c("v-list-item-title", {
                                     staticClass: "white--text",
@@ -1067,7 +1091,13 @@ var render = function () {
           _vm.info.auth
             ? _c(
                 "Link",
-                { attrs: { href: "/auth/logout" } },
+                {
+                  attrs: {
+                    href: "/auth/logout",
+                    "preserve-state": "",
+                    "preserve-scroll": "",
+                  },
+                },
                 [
                   _c(
                     "v-btn",

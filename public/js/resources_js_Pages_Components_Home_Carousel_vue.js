@@ -33,7 +33,7 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       items: [{
-        image: "images/slide-1.jpg"
+        image: "images/edited-slide-2.jpg"
       }, {
         image: "images/slide-2.jpg"
       }, {
@@ -148,9 +148,7 @@ var render = function () {
         { key: item.image, attrs: { src: item.image } },
         [
           _c("div", { staticClass: "mt-64" }, [
-            _c("div", { staticClass: "display-3" }, [
-              _vm._v("Today is our Test Message"),
-            ]),
+            _c("div", { staticClass: "display-3" }),
           ]),
         ]
       )
