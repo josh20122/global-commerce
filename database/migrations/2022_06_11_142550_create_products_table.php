@@ -17,9 +17,9 @@ return new class extends Migration
             $table->foreignId('cartegory_id')->nullable();
             $table->text('short_description');
             $table->longText('long_description')->nullable();
-            $table->float('price');
-            $table->float('rating');
-            $table->float('initial_price');
+            $table->bigInteger('price');
+            $table->bigInteger('rating');
+            $table->bigInteger('initial_price');
             $table->boolean('approved');
             $table->boolean('status');
             $table->string('title');
