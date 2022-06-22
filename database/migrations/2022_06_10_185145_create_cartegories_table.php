@@ -17,7 +17,6 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->foreignId('country_id');
-            $table->foreign('country_id')->references('id')->on('countries')->cascadeOnDelete();
             $table->boolean('status');
             $table->longText('description')->nullable();
             $table->timestamps();
