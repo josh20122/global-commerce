@@ -17,7 +17,6 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->foreignId('cartegory_id');
-            $table->foreign('cartegory_id')->references('id')->on('cartegories')->cascadeOnDelete();
             $table->longText('description');
             $table->timestamps();
         });
