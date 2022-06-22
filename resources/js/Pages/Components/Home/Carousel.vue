@@ -2,7 +2,7 @@
   <v-carousel
     reverse-transition="fade-transition"
     class="ma-0 pa-0"
-    interval="3000"
+    interval="4000"
     hide-delimiter-background
     transition="fade-transition"
     cycle
@@ -21,9 +21,9 @@ export default {
   data() {
     return {
       items: [
-        { image: "images/edited-slide-2.jpg" },
-        { image: "images/slide-2.jpg" },
-        { image: "images/slide-3.png" },
+        { image: "/images/edited-slide-2.jpg" },
+        { image: "/images/slide-2.jpg" },
+        { image: "/images/slide-3.png" },
       ],
     };
   },

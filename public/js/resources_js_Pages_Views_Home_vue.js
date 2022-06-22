@@ -188,11 +188,11 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       items: [{
-        image: "images/edited-slide-2.jpg"
+        image: "/images/edited-slide-2.jpg"
       }, {
-        image: "images/slide-2.jpg"
+        image: "/images/slide-2.jpg"
       }, {
-        image: "images/slide-3.png"
+        image: "/images/slide-3.png"
       }]
     };
   }
@@ -2120,7 +2120,7 @@ var render = function () {
       staticClass: "ma-0 pa-0",
       attrs: {
         "reverse-transition": "fade-transition",
-        interval: "3000",
+        interval: "4000",
         "hide-delimiter-background": "",
         transition: "fade-transition",
         cycle: "",
@@ -3348,7 +3348,7 @@ var render = function () {
           _vm._v(" "),
           _c("v-col", { attrs: { cols: "12", sm: "9" } }, [_c("Carousel")], 1),
           _vm._v(" "),
-          _vm.$vuetify.breakpoint.mdAndUp
+          _vm.$vuetify.breakpoint.smAndUp
             ? _c("v-col", { attrs: { cols: "12" } }, [_c("Products")], 1)
             : _vm._e(),
           _vm._v(" "),

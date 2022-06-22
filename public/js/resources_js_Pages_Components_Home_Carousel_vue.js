@@ -33,11 +33,11 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       items: [{
-        image: "images/edited-slide-2.jpg"
+        image: "/images/edited-slide-2.jpg"
       }, {
-        image: "images/slide-2.jpg"
+        image: "/images/slide-2.jpg"
       }, {
-        image: "images/slide-3.png"
+        image: "/images/slide-3.png"
       }]
     };
   }
@@ -135,7 +135,7 @@ var render = function () {
       staticClass: "ma-0 pa-0",
       attrs: {
         "reverse-transition": "fade-transition",
-        interval: "3000",
+        interval: "4000",
         "hide-delimiter-background": "",
         transition: "fade-transition",
         cycle: "",

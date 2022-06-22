@@ -7,7 +7,7 @@
       <v-col cols="12" sm="9" class="">
         <Carousel />
       </v-col>
-      <v-col cols="12" class="" v-if="$vuetify.breakpoint.mdAndUp">
+      <v-col cols="12" class="" v-if="$vuetify.breakpoint.smAndUp">
         <Products />
       </v-col>
       <v-col cols="12" class="">
