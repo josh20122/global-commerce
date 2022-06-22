@@ -92,7 +92,7 @@ vue__WEBPACK_IMPORTED_MODULE_5__["default"].use((vuetify__WEBPACK_IMPORTED_MODUL
 });
 _inertiajs_progress__WEBPACK_IMPORTED_MODULE_4__.InertiaProgress.init({
   // The color of the progress bar.
-  color: 'purple',
+  color: 'red',
   delay: 250,
   // Whether to include the default NProgress styles.
   includeCSS: true,

@@ -45,13 +45,13 @@ Route::controller(ProductViewController::class)->group(function () {
     Route::get('/product/{id}', 'view');
 });
 
-Route::controller(WishlistController::class)->group(function () {
+Route::controller(WishlistController::class)->middleware('auth')->group(function () {
     Route::get('/wishlist', 'index');
     Route::put('/wishlist/create/{id}', 'create');
     Route::put('/wishlist/remove/{id}', 'remove');
 });
 
-Route::controller(CartController::class)->group(function () {
+Route::controller(CartController::class)->middleware('auth')->group(function () {
     Route::get('/cart', 'index');
     Route::put('/cart/create/{id}', 'create');
     Route::put('/cart/remove/{id}', 'remove');
@@ -59,16 +59,16 @@ Route::controller(CartController::class)->group(function () {
     Route::put('/cart/minus/{id}', 'minus');
 });
 
-Route::controller(ViewsOrderController::class)->group(function () {
+Route::controller(ViewsOrderController::class)->middleware('auth')->group(function () {
     Route::get('/orders', 'index');
     Route::put('/order/create', 'create');
 });
 
-Route::controller(UserController::class)->group(function () {
+Route::controller(UserController::class)->middleware('auth')->group(function () {
     Route::get('/update-avatar', 'updateAvatar');
 });
 
-Route::controller(CheckoutController::class)->group(function () {
+Route::controller(CheckoutController::class)->middleware('auth')->group(function () {
     Route::get('checkout', 'index');
     Route::post('/checkout/address', 'address');
 });

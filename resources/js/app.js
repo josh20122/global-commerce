@@ -48,7 +48,7 @@ InertiaProgress.init({
 
 
   // The color of the progress bar.
-  color: 'purple',
+  color: 'red',
 
   delay: 250,
 
