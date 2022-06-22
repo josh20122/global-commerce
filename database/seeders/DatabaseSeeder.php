@@ -40,7 +40,7 @@ class DatabaseSeeder extends Seeder
         //         ->count(1))
         //     ->create();
 
-        Country::factory(3)
+        Country::factory(6)
             ->has(
                 Cartegory::factory()
 
@@ -48,15 +48,17 @@ class DatabaseSeeder extends Seeder
                         ->has(Image::factory()
                             ->count(6))
 
-                        ->count(3))
+                        ->count(100))
                     ->has(Image::factory()
                         ->count(1))
-                    ->count(3)
+                    ->count(12)
             )
+            ->has(Image::factory()
+                ->count(1))
             ->has(User::factory()
                 ->has(Image::factory()
                     ->count(1))
-                ->count(5))
+                ->count(100))
             ->create();
 
         $user1 =  User::create([
